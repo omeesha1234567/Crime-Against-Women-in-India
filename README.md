@@ -4,6 +4,8 @@
 
 This project analyzes crime data against women in India , focusing on district-wise and state-wise patterns, trends, and correlations. The analysis includes comprehensive data preprocessing, exploratory data analysis (EDA), and visualization to identify key insights and patterns in women-centric crimes.
 
+# Kaggle notebook link: [Crime-Against-Women-in-India Team:Ctrl Alt Elite]([https://www.kaggle.com/code/rishangupta/e-commerce-sales-trend-prediction-team-cookies](https://www.kaggle.com/code/omeeshadwivedi/crime-against-women)
+
 ## 🎯 Objectives
 
 - Analyze district-wise and state-wise crime patterns against women
