@@ -258,15 +258,15 @@ crime-against-women-analysis/
 ## 🎨 Dashboard Screenshots
 
 ### **Main Overview Dashboard**
-![Dashboard Overview](assets/screenshots/dashboard-main.png)
+![Dashboard Overview](visuals/dashboard.png)
 *Interactive overview showing state-wise crime distribution and temporal trends*
 
 ### **Crime Type Analysis**
-![Crime Analysis](assets/screenshots/crime-types.png)
+![Crime Analysis](visuals/Crime_Type_Proportaion.png)
 *Detailed breakdown of different crime categories with filtering options*
 
-### **Geographic Heatmap**
-![Geographic View](assets/screenshots/heatmap.png)
+### **Stacked Area Chart**
+![Stacked Area Chart](visuals/Stacked_Area_Chart.png)
 *State and district-wise crime intensity visualization*
 
 ---
