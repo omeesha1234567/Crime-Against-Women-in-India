@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Against Women in India - Interactive Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🛡️ Crime Against Women in India</h1>
+            <p>Interactive Data Analysis Dashboard (2017-2021)</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card" onclick="highlightChart('totalCrimes')">
+                <h3 id="totalCrimesCount">2,385,542</h3>
+                <p>Total Crimes Recorded</p>
+            </div>
+            <div class="stat-card" onclick="highlightChart('avgCrimes')">
+                <h3 id="avgCrimesCount">448</h3>
+                <p>Average per District</p>
+            </div>
+            <div class="stat-card" onclick="highlightChart('topState')">
+                <h3 id="topStateCount">14.59%</h3>
+                <p>Uttar Pradesh (Highest)</p>
+            </div>
+            <div class="stat-card" onclick="highlightChart('trendUp')">
+                <h3 id="trendCount">+23%</h3>
+                <p>Increase (2017-2021)</p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="yearFilter">Select Year:</label>
+                <select id="yearFilter" onchange="updateCharts()">
+                    <option value="all">All Years</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="crimeFilter">Crime Type:</label>
+                <select id="crimeFilter" onchange="updateCharts()">
+                    <option value="all">All Crime Types</option>
+                    <option value="DV">Domestic Violence</option>
+                    <option value="KA">Kidnapping & Abduction</option>
+                    <option value="Rape">Rape Cases</option>
+                    <option value="DD">Dowry Deaths</option>
+                    <option value="WT">Women Trafficking</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="stateCount">Show Top States:</label>
+                <input type="range" id="stateCount" min="5" max="15" value="10" onchange="updateTopStates(this.value)">
+                <span id="stateCountLabel">10</span>
+            </div>
+        </div>
+
+        <div class="loading" id="loading">
+            <p>🔄 Updating visualizations...</p>
+        </div>
+
+        <div class="chart-grid">
+            <div class="chart-container">
+                <div class="chart-title">Top States by Crime Count</div>
+                <canvas id="statesChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="chart-title">Crime Type Distribution</div>
+                <canvas id="crimeTypeChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="chart-title">Temporal Trends (2017-2021)</div>
+                <canvas id="trendChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="chart-title">Regional Crime Intensity</div>
+                <canvas id="regionalChart"></canvas>
+            </div>
+        </div>
+
+        <div class="insights-panel">
+            <h2>📊 Key Insights & Data Story</h2>
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <h3>🔴 Critical Hotspots</h3>
+                    <p>Uttar Pradesh leads with 14.59% of total crimes, followed by Maharashtra (9.27%) and Rajasthan (9.03%). These three states account for nearly one-third of all crimes against women in India.</p>
+                </div>
+                <div class="insight-card">
+                    <h3>📈 Alarming Trends</h3>
+                    <p>Domestic Violence constitutes 52.32% of all crimes, highlighting the severity of household-level violence. The consistent upward trend indicates urgent need for intervention strategies.</p>
+                </div>
+                <div class="insight-card">
+                    <h3>🎯 Pattern Analysis</h3>
+                    <p>Urban districts show higher crime concentration, with strong correlations between different crime types suggesting systemic issues that require comprehensive policy responses.</p>
+                </div>
+                <div class="insight-card">
+                    <h3>⚡ Action Points</h3>
+                    <p>Focus on prevention programs in high-crime states, strengthen domestic violence reporting mechanisms, and implement targeted interventions for vulnerable communities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-banner">
+        <p>
+            <strong>Crime Against Women in India • June 2025 • Made with ❤️ and defiance</strong><br>
+            Data sourced from <a href="https://data.gov.in/" target="_blank">data.gov.in</a> • 
+            Project by <strong>Mansi Upadhyay</strong>, <strong>Omeesha Dwivedi</strong>, <strong>Shachisuryavanshi</strong> and <strong>Sneha Das</strong><br>
+            <em>Breaking the silence, demanding justice for women's safety in India! ✊</em>
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
