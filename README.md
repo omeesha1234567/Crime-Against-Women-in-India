@@ -81,11 +81,11 @@ This project analyzes crime data against women in India , focusing on district-w
 ## 📊 Visualizations
 
 ### Generated Visualizations:
-1. **Top 10 Districts by Total Crimes** - Bar chart showing crime hotspots
-2. **Year-wise Crime Trends** - Line plots showing temporal patterns
-3. **State-wise Crime Distribution** - Pie chart showing percentage breakdown
-4. **Correlation Heatmap** - Crime type relationship analysis
-5. **District Analysis by State** - Subplot analysis for top states
+1. **Top 10 States by Total Crimes** - Bar chart showing crime hotspots
+2. **Year-wise Crime Type Trends** - Line plots showing temporal patterns
+3. **Crime Type Distribution** - Donut chart showing percentage breakdown of Crime Type 
+4. **Trend of Crime Over years** - Stacked Area chart
+5. **State-wise Crime Type Trend** - Stacked Bar Chart
 
 ## 🛠️ Technologies Used
 
