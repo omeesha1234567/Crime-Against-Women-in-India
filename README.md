@@ -327,7 +327,7 @@ If you use this analysis in your research or projects, please cite as:
 
 | Team Member | Role | Contribution |
 |-------------|------|--------------|
-| **Sneha Das** | Frontend Developer | Project leadership, interactive dashboard, UI/UX design |
+| **Sneha Das** | Frontend Developer |Interactive dashboard, UI/UX design |
 | **Omeesha Dwivedi** | Data Engineer | Data preprocessing, pipeline development |
 | **Shachi Suryavanshi** | Research Coordinator | Data validation, documentation |
 | **Mansi Upadhyay** | Data Analyst | Statistical analysis, insight generation |
